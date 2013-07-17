@@ -1,0 +1,372 @@
+@charset "utf-8";
+/* CSS Document */
+/* 	-----------------------------------------------------
+	------------------- General Styles ------------------
+	----------------------------------------------------- */
+* {margin:0; padding:0; outline: none;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; background:transparent;}
+
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after {content:''; content:none;}
+:focus {outline:0;}
+ins {text-decoration:none;}
+del {text-decoration:line-through;}
+table {border-collapse:collapse; border-spacing:0;}
+a, a:hover, a:active, a:focus {outline:none; outline-style:none; outline-width:0;}
+
+img {margin:0; padding:0; outline-style:none; outline-width:0; }
+
+body {margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; color:#858585; background:#f2f1ec url(../images/tree.png) no-repeat left bottom; }
+
+@font-face {
+    font-family: 'AvantGardeDemiRegular';
+    src: url('../fonts/avgd____-webfont.eot');
+    src: url('../fonts/avgd____-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avgd____-webfont.woff') format('woff'),
+         url('../fonts/avgd____-webfont.ttf') format('truetype'),
+         url('../fonts/avgd____-webfont.svg#AvantGardeDemiRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lucida Grande';
+    src: url('../fonts/Lucida_Grande.eot');
+    src: url('../fonts/Lucida_Grande.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lucida Grande.woff') format('woff'),
+         url('../fonts/Lucida Grande.ttf') format('truetype'),
+         url('../fonts/lucida_grande.svg#AvantGardeDemiRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lucida Grande Bold';
+    src: url('../fonts/Lucida_Grande_Bold.eot');
+    src: url('../fonts/Lucida_Grande_Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lucida Grande Bold.woff') format('woff'),
+         url('../fonts/Lucida Grande Bold.ttf') format('truetype'),
+         url('../fonts/lucida_grande_bold.svg#AvantGardeDemiRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OptimaRegular';
+    src: url('../fonts/optima-webfont.eot');
+    src: url('../fonts/optima-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/optima-webfont.woff') format('woff'),
+         url('../fonts/optima-webfont.ttf') format('truetype'),
+         url('../fonts/optima-webfont.svg#OptimaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.clr {font-size:0; height:0; line-height:0; clear:both;}
+.left {margin:0; padding:0; width:auto; height:auto; float:left;}
+.right {margin:0; padding:0; width:auto; height:auto; float:right;}
+
+/* 	-----------------------------------------------------
+	------------------ Reserve Styles -------------------
+	----------------------------------------------------- */
+#reserve_section {margin:0 auto; padding:0; width:100%; height:65px; background-color:#A7C1DC; position: fixed; top: 0; z-index: 20;}
+
+	#reserve {margin:0 auto; width:940px; height:28px; background-color:#A7C1DC;}
+	    #reserve .reserve_field_container { float:left; margin-right:25px;}
+	    
+		#reserve .label01 {margin:0; padding:0; width:60px; height:25px; font:normal 15px/28px Arial, Helvetica, sans-serif; color:#735933;}
+		#reserve .label02 {margin:0; padding:0 5px 0 0; width:40px; height:25px; font:normal 11px/28px Arial, Helvetica, sans-serif; color:#735933; text-align:right;}
+		#reserve .label03 {margin:0; padding:0 5px 0 0; width:25px; height:25px; font:normal 11px/28px Arial, Helvetica, sans-serif; color:#735933; text-align:right;}
+		#reserve .label04 {margin:0; padding:0 5px 0 0; width:35px; height:25px; font:normal 11px/28px Arial, Helvetica, sans-serif; color:#735933; text-align:right;}
+		#reserve .label05 {margin:0; padding:0 5px 0 0; width:40px; height:25px; font:normal 11px/28px Arial, Helvetica, sans-serif; color:#735933; text-align:right;}
+		#reserve .labelpromo {margin:0; padding:0 5px 0 0; width:50px; height:25px; font:normal 11px/28px Arial, Helvetica, sans-serif; color:#735933;}
+		#reserve .label06 a {margin-top:25px; padding:2px 0; width:45px; height:25px; float:left; font:normal 11px/12px Arial, Helvetica, sans-serif; color:#FFFFFF; text-decoration:none;}
+		#reserve .label06 a:hover{text-decoration:underline;}
+		
+		#reserve .field01 {margin:0; padding:0; width:170px; height:28px; float:left;}
+				#reserve .field01 .reserve_tooltip {position: absolute; display: none; top: 42px; height: 30px; width: 150px; background: url(../images/popup.png) no-repeat left top ; z-index: 9999px; padding: 10px 0 0 10px; color: #ffffff; font-size: 10px;}
+		#reserve .field02 {margin:0; padding:0; width:110px; height:28px; float:left; background:url(../images/input-01.png) no-repeat top;}
+			#reserve .field02 .box01 {margin:0; padding:6px; width:70px; height:16px; float:left;}
+			#reserve .field02 .box02 {margin:0; padding:0; width:28px; height:28px; float:left;}
+			#reserve .field02 .box01 input[type="text"] {margin:0; padding:0; width:70px; height:auto; background:none; border:none; font:normal 12px Arial, Helvetica, sans-serif; color:#735933;}
+		
+		#reserve .field03 {margin:0; padding:0; width:60px; height:28px; float:left;}
+		#reserve .fieldpromo {margin:0; padding:0; width:100px; height:28px; float:left;}
+		#reserve .textpromo {background:url(../images/input-promo.png) no-repeat top; width:93px; height:28px; border:none; color:#735933; padding-left:10px; }
+		#reserve .field04 {margin-top:25px; padding:0; width:125px; height:28px; float:left; text-align:center;}
+
+
+
+
+/* 	-----------------------------------------------------
+	------------------- Header Styles -------------------
+	----------------------------------------------------- */
+#header_section {margin: 65px auto 0; position:relative; padding:0; width:100%; height:auto; background-color:#FFFFFF;}
+
+	#header {margin:0 auto; padding:0; width:940px; height:auto;}
+	#header #logo {margin:25px 0; padding:0; width:auto; height:auto; float:left;}
+	#header #logo a {width:150px; height:110px; text-indent: -9999px; background: url(../images/logo.png) no-repeat top center; display:block;}
+	
+	#header #navigation {margin:0; padding:0 0 0 3px; width:720px; height:auto; float:right; background:url(../images/line.png) no-repeat left;}
+	
+		#header #navigation ul {margin:0; padding:0; list-style:none;}
+		#header #navigation ul li {margin:0; padding:0 3px 0 0; width:120px; height:160px; float:left; background:url(../images/line.png) no-repeat right;}
+
+		#header #navigation ul li.hotels {margin:0; padding:0; width:120px; height:160px; float:left;}
+		#header #navigation ul li.hotels a {background:url(../images/navi-hotels.png) no-repeat 0 0; display:block; text-indent:-5000px; width:120px; height:160px;}
+		#header #navigation ul li.hotels a:hover, #header #navigation ul li.hotels a.select {background:url(../images/navi-hotels.png) no-repeat 0 -160px;}
+		
+		#header #navigation ul li.promocoe {margin:0; padding:0; width:120px; height:160px; float:left;}
+		#header #navigation ul li.promocoe a {background:url(../images/navi-promocoes.png) no-repeat 0 0; display:block; text-indent:-5000px; width:120px; height:160px;}
+		#header #navigation ul li.promocoe a:hover, #header #navigation ul li.promocoe a.select {background:url(../images/navi-promocoes.png) no-repeat 0 -160px;}
+		
+		#header #navigation ul li.eventos {margin:0; padding:0; width:120px; height:160px; float:left;}
+		#header #navigation ul li.eventos a {background:url(../images/navi-eventos.png) no-repeat 0 0; display:block; text-indent:-5000px; width:120px; height:160px;}
+		#header #navigation ul li.eventos a:hover, #header #navigation ul li.eventos a.select {background:url(../images/navi-eventos.png) no-repeat 0 -160px;}
+		
+		#header #navigation ul li.kids {margin:0; padding:0; width:120px; height:160px; float:left;}
+		#header #navigation ul li.kids a {background:url(../images/navi-kids.png) no-repeat 0 0; display:block; text-indent:-5000px; width:120px; height:160px;}
+		#header #navigation ul li.kids a:hover, #header #navigation ul li.kids a.select {background:url(../images/navi-kids.png) no-repeat 0 -160px;}
+		
+		#header #navigation ul li.tour {margin:0; padding:0; width:120px; height:160px; float:left;}
+		#header #navigation ul li.tour a {background:url(../images/navi-tour.png) no-repeat 0 0; display:block; text-indent:-5000px; width:120px; height:160px;}
+		#header #navigation ul li.tour a:hover, #header #navigation ul li.tour a.select {background:url(../images/navi-tour.png) no-repeat 0 -160px;}
+		
+		#header #navigation ul li.contato {margin:0; padding:0; width:120px; height:160px; float:left;}
+		#header #navigation ul li.contato a {background:url(../images/navi-contato.png) no-repeat 0 0; display:block; text-indent:-5000px; width:120px; height:160px;}
+		#header #navigation ul li.contato a:hover, #header #navigation ul li.contato a.select {background:url(../images/navi-contato.png) no-repeat 0 -160px;}
+		
+		
+/* 	-----------------------------------------------------
+	------------------ Submenu Styles -------------------
+	----------------------------------------------------- */
+#submenu_section {margin:0 auto; padding:0; width:100%; height:34px; background-color:#009965;}
+
+	#submenu {margin:0 auto; padding:0 0 0 88px; width:852px; height:34px;}
+	#submenu ul {margin:0; padding:0; list-style:none;}
+	#submenu ul li {margin:0; padding:0; float:left; font:normal 15px/34px 'Lucida Grande'; color:#fcd125;} 
+	#submenu ul li a {color:#FFFFFF; text-decoration:none; padding:0 6px; display:block;}
+	#submenu ul li a:hover {color:#fcd125; text-decoration:none;}
+
+/* 	-----------------------------------------------------
+	------------------- Banner Styles -------------------
+	----------------------------------------------------- */
+#banner_section {margin:0 auto; padding:0; width:100%; height:385px; background-color:#009965;}
+
+	#banner {margin:0 auto; padding:0; width:100%; height:385px;}
+
+/* 	-----------------------------------------------------
+	------------------- Content Styles ------------------
+	----------------------------------------------------- */
+#content_section {margin:0 auto; padding:0; width:100%; height:auto;}
+
+	#content {margin:0 auto; padding:30px 0; width:940px; height:auto; min-height:300px;}
+	
+	#content h1 {font:normal 35px/40px 'OptimaRegular'; color:#333333; padding-bottom:20px;}
+	#content h1 img {float:left; margin-right:20px;}
+	#content h1 span {line-height:56px !important;}
+	#content h2 {font:normal 30px/40px 'OptimaRegular'; color:#735933; text-shadow: 2px 1px 2px #999;}
+	#content .sub-title {font:normal 35px/40px 'OptimaRegular'; color:#333; padding-bottom:10px; text-shadow: none;}
+	#content h3 {font:normal 35px/40px 'OptimaRegular'; color:#e69200; padding-bottom:10px;}
+	#content h4 {font:normal 35px/56px 'OptimaRegular'; color:#333333;}
+	#content .events {font:normal 22px/22px 'OptimaRegular'; color:#999999;}
+	#content h4 img {float:left; margin-right:20px;}
+	#content h5 {font:normal 22px/22px 'OptimaRegular'; color:#999999;}
+	#content p {font:normal 12px/18px 'Lucida Grande'; color:#606054;}
+	#content .blue_txt {font-size:18px !important; color:#1b69bb !important;}
+		
+		.more {margin:10px 0 0 0; padding:0; width:114px; height:24px; background:url(../images/btn-03.png) no-repeat top; font:bold 17px/24px 'OptimaRegular'; color:#735933; text-align:center;}
+		.more a {color:#735933; text-decoration:none; font:bold 17px/24px 'OptimaRegular';}
+		.more a:hover {color:#000000; text-decoration:none;}
+	
+		#content .box01 {margin:20px 0; padding:0; width:300px; height:150px; float:left; background:url(../images/box-01.png) no-repeat bottom;}
+		#content .box02 {margin:10px 0; padding:0; width:460px; height:165px; float:left; background:url(../images/box-02.png) no-repeat bottom;}
+		#content .box01 .heading_box {margin:0; padding:0; width:300px; height:40px; float:left;}
+		#content .box01 .content_box {margin:0; padding:10px; width:280px; height:90px; float:left;}
+		#content .box01 .content_box .img_box {margin:0; padding:0; width:140px; height:90px; float:left;}
+		#content .box01 .content_box .txt_box {margin:0; padding:0; width:125px; height:90px; float:right;}
+		#content .box01 .content_box .txt_box p {font-size:11px !important; line-height:16px !important;}
+		
+		#content .box02 .img_box {margin:0; padding:10px; width:225px; height:145px; float:right;}
+		#content .box02 .txt_box {margin:0; padding:10px; width:195px; height:145px; float:left;}
+		#content .box02 .txt_box p {font-size:11px !important; line-height:16px !important; padding-left:3px;}
+		#content .box02 .txt_box strong {font-size:14px !important; line-height:20px !important; font-family:'Lucida Grande Bold' !important;}
+		#content .box02 .icon_box {margin:0; padding:47px 15px; width:70px; height:71px; float:left;}
+		#content .box02 .form_box {margin:0; padding:15px 0; width:360px; height:135px; float:left;}
+		
+		#content .box02 .label01 {margin:0; padding:5px 0 0 0; width:360px; height:30px; font:normal 20px/30px 'OptimaRegular'; color:#735933;}
+		#content .box02 .field01 {margin:4px 10px 4px 0; padding:6px 10px; width:170px; height:16px; float:left; background:url(../images/input-07.png) no-repeat top;}
+		#content .box02 .field01 input[type="text"] {width:170px;}
+		#content .box02 .field02 {margin:4px 0; padding:0; width:160px; height:28px; float:left;}
+		#content .box02 input[type="text"] {margin:0; padding:0; width:auto; height:auto; background:none; border:none; font:normal 12px 'Lucida Grande'; color:#2c2727;}
+		
+		
+		
+		#content .section01 {margin:0; padding:0 0 40px 0; width:940px; height:auto; border-bottom:8px solid #e2ded5;}
+		#content .section02 {margin:0; padding:30px 0; width:940px; height:auto;}
+		#content .section03 {margin:0; padding:0; width:940px; height:auto;}
+		
+		.hotel_gallery_box {margin:0; padding:0; width:620px; height:auto; float:left;}
+		.hotel_detail_box {margin:0; padding:0; width:300px; height:auto; float:right;}
+		
+		#content .section02 table {margin:0; padding:0;}
+		#content .section02 table th {margin:0; padding:10px 15px; font:normal 15px 'Lucida Grande'; color:#000000; background-color:#edb200;}
+		#content .section02 table td {margin:0; padding:10px 15px; font:normal 11px 'Lucida Grande'; color:#666666;}
+		#content .section02 table td span {font-size:15px !important; color:#ec0a6e !important;}
+		#content .section02 table tr.odd {background-color:#f6f6f6;}
+		#content .section02 table tr.even {background-color:#fbfbfb;}
+		
+		#content .section03 .kids-logo {width:940px; height:215px; text-indent: -9999px; background: url(../images/summer-kids.png) no-repeat top center; display:block;}
+		#content .section03 .label01 {margin:5px 10px 0 0; padding:8px 0 0 0; width:300px; height:auto; float:left; font:normal 14px/16px 'Lucida Grande'; color:#000000;}
+		#content .section03 .label01 .cell01 {margin:0; padding:0; width:220px; height:auto; float:left;}
+		#content .section03 .label01 .cell02 {margin:0; padding:0; width:80px; height:auto; float:left;}
+		#content .section03 .label01 .cell03 {margin:0 5px 0 0; padding:0; width:145px; height:auto; float:left;}
+		#content .section03 .label01 .cell04 {margin:0 0 0 5px; padding:0; width:145px; height:auto; float:left;}
+		
+		#content .section03 .label02 {margin:5px 10px 0 10px; padding:8px 0 0 0; width:300px; height:auto; float:left; font:normal 14px/16px 'Lucida Grande'; color:#000000;}
+		#content .section03 .label03 {margin:5px 0 0 10px; padding:8px 0 0 0; width:300px; height:auto; float:left; font:normal 14px/16px 'Lucida Grande'; color:#000000;}
+		#content .section03 .label04 {margin:5px 0 0 10px; padding:8px 0 0 0; width:210px; height:auto; float:left; font:normal 14px/16px 'Lucida Grande'; color:#000000;}
+		#content .section03 .label05 {margin:5px 10px 0 0; padding:8px 0 0 0; width:185px; height:auto; float:left; font:normal 14px/16px 'Lucida Grande'; color:#000000;}
+		#content .section03 .label06 {margin:5px 10px 0 10px; padding:8px 0 0 0; width:185px; height:auto; float:left; font:normal 14px/16px 'Lucida Grande'; color:#000000;}
+		
+		#content .section03 .field01 {margin:5px 10px 5px 0; padding:0; width:300px; height:28px; float:left;}
+		#content .section03 .field02 {margin:5px 10px 5px 10px; padding:0; width:300px; height:28px; float:left;}
+		#content .section03 .field03 {margin:5px 0 5px 10px; padding:0; width:300px; height:28px; float:left;}
+		#content .section03 .field04 {margin:5px 10px 5px 0; padding:0; width:210px; height:28px; float:left;}
+		#content .section03 .field05 {margin:5px 10px 5px 0; padding:0; width:80px; height:28px; float:left;}
+		#content .section03 .field06 {margin:5px 10px 5px 10px; padding:0; width:80px; height:28px; float:left;}
+		#content .section03 .field07 {margin:5px 0 5px 10px; padding:0; width:210px; height:28px; float:left;}
+		#content .section03 .field08 {margin:5px 10px 5px 0; padding:0; width:185px; height:28px; float:left; background:url(../images/input-09.png) no-repeat top;}
+		#content .section03 .field08 .cell01 {margin:0; padding:0; width:157px; height:28px; float:left;}
+		#content .section03 .field08 .cell02 {margin:0; padding:0; width:28px; height:28px; float:left;}
+		#content .section03 .field09 {margin:5px 10px 5px 10px; padding:0; width:185px; height:28px; float:left; background:url(../images/input-09.png) no-repeat top;}
+		#content .section03 .field09 .cell01 {margin:0; padding:0; width:157px; height:28px; float:left;}
+		#content .section03 .field09 .cell02 {margin:0; padding:0; width:28px; height:28px; float:left;}
+		#content .section03 .field10 {margin:5px 10px 5px 0; padding:0; width:185px; height:28px; float:left;}
+		#content .section03 .field11 {margin:5px 0 5px 10px; padding:0; width:735px; height:28px; float:left; font:normal 14px/28px 'Lucida Grande'; color:#000000;}
+		#content .section03 .field12 {margin:15px 0; padding:15px 0; width:940px; height:auto; float:left; border:1px solid #CCCCCC; border-width:1px 0;}
+		#content .section03 .field13 {margin:5px 10px 5px 0; padding:5px 0; width:500px; height:18px; float:left; font:normal 14px/18px 'Lucida Grande'; color:#333333;}
+		#content .section03 .field14 {margin:5px 2px 5px 0; padding:0; width:114px; height:28px; float:right;}
+		
+		
+		#content .section03 input[type="text"].input_300 {margin:0; padding:6px 10px; width:280px; height:auto; background:url(../images/input-03.png) no-repeat top; border:none; font:normal 12px 'Lucida Grande'; color:#2c2727;}
+		#content .section03 input[type="text"].input_210 {margin:0; padding:6px 10px; width:190px; height:auto; background:url(../images/input-04.png) no-repeat top; border:none; font:normal 12px 'Lucida Grande'; color:#2c2727;}
+		#content .section03 input[type="text"].input_80 {margin:0; padding:6px 10px; width:60px; height:auto; background:url(../images/input-05.png) no-repeat top; border:none; font:normal 12px 'Lucida Grande'; color:#2c2727;}
+		#content .section03 input[type="text"].input_157 {margin:0; padding:6px 10px; width:137px; height:auto; background:none; border:none; font:normal 12px 'Lucida Grande'; color:#2c2727;}
+		#content .section03 input[type="text"].input_185 {margin:0; padding:6px 10px; width:165px; height:auto; background:url(../images/input-09.png) no-repeat top; border:none; font:normal 12px 'Lucida Grande'; color:#2c2727;}
+		
+		#content .section03 textarea.input_940 {margin:15px 0 0 0; padding:10px; width:920px; height:150px; background:url(../images/input-10.png) no-repeat top; border:none; font:normal 12px 'Lucida Grande'; color:#2c2727; overflow:auto;}
+		
+		#content .section03 input[type="submit"] {margin:0 2px; padding:0; width:114px; height:24px; background:url(../images/btn-03.png) no-repeat top; border:none; font:bold 17px/24px 'OptimaRegular'; color:#735933; cursor:pointer;}
+		
+		#content .section01 .heading {margin:0 0 15px 0; padding:10px 0; width:940px; height:56px; float:left; border-bottom:1px solid #e2ded5;}
+		#content .section01 .address {margin:0; padding:30px 120px 0 0; width:180px; height:auto; min-height:120px; float:left; background:url(../images/icon-06.png) no-repeat right top;}
+		
+		
+		#content .section03 ul.package {margin:0; padding:0; list-style:none;}
+		#content .section03 ul.package li {margin:20px 15px 20px 0; padding:0; width:220px; height:340px; float:left; display:block;}
+		#content .section03 ul.package li.last {margin:20px 0 20px 0 !important;}
+		#content .section03 ul.package li .package_details {margin:0; padding:9px; width:200px; height:270px; float:left; border:1px solid #72716f;}
+		#content .section03 ul.package li .package_details .img_box {margin:0; padding:0 0 5px 0; width:200px; height:125px; float:left;}
+		#content .section03 ul.package li .package_details .txt_box01 {margin:0; padding:5px 0; width:200px; float:left; font:normal 16px/18px 'Lucida Grande'; color:#666666; }
+		#content .section03 ul.package li .package_details .txt_box02 {margin:0; padding:0 0 5px 0; width:200px; float:left; font:normal 12px/16px 'Lucida Grande'; color:#2c2727;}
+		#content .section03 ul.package li .package_details .txt_box03 {margin:0; padding:9px 0 0 0; width:200px; height:30px; float:left; border-top:1px solid #72716f;}
+		#content .section03 ul.package li .package_details .txt_box03 .left {font:normal 11px/30px 'Lucida Grande'; color:#2c2727;}
+		#content .section03 ul.package li .package_details .txt_box03 .right {font:normal 20px/30px 'Lucida Grande'; color:#007ac3;}
+		#content .section03 ul.package li .package_details .txt_box03 .right span {font-size:14px !important; margin-right:-5px;}
+		#content .section03 ul.package li .package_details .txt_box04 {margin:0; padding:0; width:200px; height:20px; float:left; font:normal 11px/14px 'Lucida Grande'; color:#2c2727; text-align:right;}
+		
+		#content .section03 ul.package li .button_box {margin:15px 0 0 0; padding:0; width:220px; height:35px; float:left;}
+		#content .section03 ul.package li .button_box input[type="button"] {margin:0; padding:0; width:220px; height:35px; background:url(../images/btn-06.png) no-repeat top; border:none; font:bold 18px/35px 'OptimaRegular'; color:#FFFFFF; cursor:pointer;}
+		
+		
+		.paging {margin:0; padding:0; width:100%; height:auto; float:left; text-align:center; font:normal 13px/18px 'Lucida Grande'; color:#00a16b;}
+		.paging a {color:#00a16b; text-decoration:none; padding:0 8px;}
+		.paging a:hover {color:#000000; text-decoration:none;}
+		.paging a.active {color:#000000; text-decoration:none; font-family:'Lucida Grande Bold'}
+		.paging a.inactive {color:#666666; text-decoration:none;}
+		
+		#content .section03 .color_box {margin:0; padding:0; width:460px; height:auto; float:left;}
+		#content .section03 .summy_box {margin:0; padding:0; width:460px; height:106px; float:left;}
+		
+		.carousel_box {margin:0; padding:0; width:940px; height:140px; float:left;}
+		
+
+
+		#content .section03 .detail_box01 {margin:0; padding:0; width:350px; height:auto; float:left;}
+		#content .section03 .detail_box01 .img_box {margin:0; padding:0; width:350px; height:auto; float:left;}
+		#content .section03 .detail_box01 .btn_box {margin:0; padding:10px 0;  height:auto; float:right; text-align:right;}
+		#content .section03 .detail_box01 .btn_box input[type="button"] {margin:0; padding:0; width:140px; height:35px; background:url(../images/btn-08.png) no-repeat top; border:none; font:bold 18px/35px 'OptimaRegular'; color:#FFFFFF; cursor:pointer;}
+
+		#content .section03 .detail_box01 .btn_box a {display:block; margin:0; padding:0; width:140px; height:35px; background:url(../images/btn-08.png) no-repeat top; border:none; font:bold 18px/35px 'OptimaRegular'; color:#FFFFFF; cursor:pointer;text-align:center;text-decoration:none;}
+		
+		#content .section03 .detail_box02 {margin:0; padding:0; width:570px; height:auto; float:right;}
+		#content .section03 .detail_box02 .price_box {margin:10px 0; padding:10px 0; width:auto; height:auto; float:left; border:1px solid #d1d2cd; border-width:1px 0;}
+		#content .section03 .detail_box02 .price_box p {font-size:15px !important; line-height:30px !important; color:#333333 !important;}
+		#content .section03 .detail_box02 .price_box .blue_txt01 {font:normal 16px/30px 'Lucida Grande'; color:#007ac3 !important; letter-spacing:-0.1em !important;}
+		#content .section03 .detail_box02 .price_box .blue_txt02 {font:normal 24px/30px 'Lucida Grande'; color:#007ac3 !important; letter-spacing:-0.1em !important;}
+		#content .section03 .detail_box02 h6 {font:normal 16px/30px 'Lucida Grande' !important; color:#606054 !important;}
+		#content .section03 .detail_box02 ul {margin:0; padding:0; list-style:none;}
+		#content .section03 .detail_box02 ul li {margin:0; padding:0 0 0 12px; font:normal 13px/20px 'Lucida Grande'; color:#606054; background:url(../images/bullet.png) no-repeat 0 9px;}
+		
+
+/* 	-----------------------------------------------------
+	------------------- Footer Styles -------------------
+	----------------------------------------------------- */
+#footer_section {margin:0 auto; padding:0; width:100%; height:auto; background:url(../images/footer-bg.png) repeat top;}
+
+	#footer {margin:0 auto; padding:30px 0; width:940px; height:auto;}
+	
+		#footer .section01 {margin:0; padding:0 0 15px 0; width:940px; height:auto; float:left;}
+		
+			#footer .section01 .box01 {margin:0; padding:0; width:100px; height:auto; float:left;}
+			#footer .section01 .box02 {margin:0; padding:0; width:165px; height:auto; float:left;}
+			#footer .section01 .box02 h2 {font:normal 15px/18px 'Lucida Grande'; color:#545353; min-height:20px;}
+			#footer .section01 .box02 ul {margin:0; padding:0; list-style:none;}
+			#footer .section01 .box02 ul li {margin:0; padding:0; font:normal 13px/20px 'Lucida Grande'; color:#858585;}
+			#footer .section01 .box02 ul li a {color:#858585; text-decoration:none; display:block;}
+			#footer .section01 .box02 ul li a:hover {color:#000000; text-decoration:none;}
+			#footer .section01 .box02 .footer-title a {font:normal 15px/18px 'Lucida Grande'; color:#00438b; min-height:20px; text-decoration:none;}
+			
+			#footer .section01 .box03 {margin:0; padding:0; width:35px; height:auto; float:left;}
+			#footer .section01 .box-social {margin:0; padding:0; width:36px; height:auto; float:left;}
+			#footer .section01 .box-social .box-rede{margin:0; padding:0; width:36px; height:36px; float:left; margin-top: 6px;}
+			#footer .section01 .box-social .box-rede a {margin:0; padding:0; width:36px; height:36px;}
+			#footer .section01 .box-social .twitter{background:url(../images/redes-sociais.png) no-repeat 0px 0px; background-position: 0px 0px;}
+			#footer .section01 .box-social .twitter:hover{background:url(../images/redes-sociais.png) no-repeat 0px 0px; background-position: -38px 0px;}
+		    #footer .section01 .box-social .facebook{background:url(../images/redes-sociais.png) no-repeat 0px 0px; background-position: 0px -40px;}
+			#footer .section01 .box-social .facebook:hover{background:url(../images/redes-sociais.png) no-repeat 0px 0px; background-position: -38px -40px;}
+		    #footer .section01 .box-social .flickr{background:url(../images/redes-sociais.png) no-repeat 0px 0px; background-position: 0px -79px;}
+			#footer .section01 .box-social .flickr:hover{background:url(../images/redes-sociais.png) no-repeat 0px 0px; background-position: -38px -79px;}
+			#footer .section01 .box-social .instagram{background:url(../images/redes-sociais.png) no-repeat 0px 0px; background-position: 0px -119px;}
+			#footer .section01 .box-social .instagram:hover{background:url(../images/redes-sociais.png) no-repeat 0px 0px; background-position: -38px -119px;}
+
+		
+		#footer .section02 {margin:0; padding:4px 0; width:940px; height:auto; float:left; border:1px solid #CCCCCC; border-width:1px 0;}
+			
+			#footer .section02 p {font:normal 11px/16px Arial, Helvetica, sans-serif; color:#333333;}
+			#footer .section02 p strong {font-size:12px;}
+		
+		#footer .section03 {margin:0; padding:8px 0; width:940px; height:auto; float:left;}
+		#footer .section03 .box01 {margin:0; padding:0; width:420px; height:auto; float:left; font:normal 11px/20px Tahoma; color:#5f5f5d;}
+		#footer .section03 .box01 img {float:left;}
+		#footer .section03 .box01 a {color:#5f5f5d; text-decoration:none;}
+		#footer .section03 .box01 a:hover {color:#000000; text-decoration:none;}
+		
+		#footer .section03 .box02 {margin:0; padding:0 10px; width:190px; height:auto; float:left; border-left:1px solid #dbdbc7; font:normal 11px/23px Tahoma; color:#9d9d9d;}
+		#footer .section03 .box02 img {float:left;}
+		#footer .section03 .box02 a {color:#9d9d9d; text-decoration:none;}
+		#footer .section03 .box02 a:hover {color:#000000; text-decoration:none;}
+		
+		#footer .section03 .box03 {margin:0; padding:0 10px; width:120px; height:auto; float:left; border-left:1px solid #dbdbc7; font:normal 11px/23px Tahoma; color:#9d9d9d;}
+		#footer .section03 .box03 img {float:left;}
+		#footer .section03 .box03 a {color:#9d9d9d; text-decoration:none;}
+		#footer .section03 .box03 a:hover {color:#000000; text-decoration:none;}
+		
+		#footer .section03 .box04 {margin:0; padding:0 0 0 10px; width:157px; height:auto; float:left; border-left:1px solid #dbdbc7; font:normal 11px/23px Tahoma; color:#9d9d9d;}
+		#footer .section03 .box04 img {float:left;}
+		#footer .section03 .box04 a {color:#9d9d9d; text-decoration:none;}
+		#footer .section03 .box04 a:hover {color:#000000; text-decoration:none;}
+		
+		
+.success_massage {margin:0 0 10px 0; padding:20px 20px 20px 50px; width:540px; height:auto; float:left; background:#FFFFFF url(../images/icon-success.png) no-repeat 20px 20px; font:normal 15px/20px 'Lucida Grande'; color:#009966;}   
