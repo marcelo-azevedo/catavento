@@ -1,0 +1,119 @@
+#footer{
+	height: 320px;
+	width: 100%;
+	.clearfix;
+	background-color: #EBEBE3;
+}
+
+#news{
+	position: relative;
+	.size(335px, 94px);
+	padding-left: 80px;
+	margin: 60px 30px 70px 25px;
+
+	h2{
+		font-weight: normal;
+		.txt-26;
+		color: #353533;
+		margin-bottom: 5px;
+	}
+
+	input[type=text]{
+		.size(185px, 27px);
+		border: none;
+		.sombra-interna(4px, 0.3);
+		.bdr;
+		.box-sizing;
+		padding: 0 10px;
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	#btn-cadastrar{
+		.size(137px, 28px);
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		border: none;
+		background: url(../img/btn-cadastrar.png);
+		cursor: pointer;
+	}
+
+	&:before{
+		content: "";
+		.size(73px, 72px);
+		background: url(../img/icon-news.png) no-repeat;
+		display: block;
+		position: absolute;
+		top: 20px;
+		left: 0;
+	}
+}
+
+#redes{
+	.box-sizing;
+	.size(70px,183px);
+	border-left: 1px solid #fff;
+	position: absolute;
+	right: 350px;
+	top: 25px;
+	padding: 15px;
+
+	& > a{
+		.size(36px, 36px);
+		display: block;
+		margin-bottom: 3px;
+		background: url('../img/icon-redes.png') no-repeat 0 0;
+
+		&.redes-2{
+			background-position: 0 -42px;
+		}
+
+		&.redes-3{
+			background-position: 0 -84px;
+		}
+
+		&.redes-4{
+			background-position: 0 -124px;
+		}
+	}
+
+}
+
+#propa{
+	position: absolute;
+	top: 30px;
+	right: 0;
+}
+
+#footer-contato{
+	width: 100%;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	padding: 10px;
+
+	p{
+		.txt-11;
+		color: #474842;
+		margin-bottom: 2px;
+	}
+
+}
+
+p.footer-email{
+	.txt-12;
+	color: #474842;
+	float: right;
+	margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+

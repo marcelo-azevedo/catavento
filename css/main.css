@@ -1875,6 +1875,12 @@ img.alignright {
 .clearfix {
   zoom: 1;
 }
+.marg-0 {
+  margin: 0 !important;
+}
+.margl-0 {
+  margin-left: 0 !important;
+}
 /**
 *@name: LESSFunctions ;
 *@author: Marcelo Azevedo;
@@ -1958,6 +1964,13 @@ img.alignright {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'agencyfbregular';
+  src: url('fonts/agencyfb-regular-webfont.eot');
+  src: url('fonts/agencyfb-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/agencyfb-regular-webfont.woff') format('woff'), url('fonts/agencyfb-regular-webfont.ttf') format('truetype'), url('fonts/agencyfb-regular-webfont.svg#agencyfbregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 /*
 =========================================================================================
 ======================================== FUNÇÕES ========================================
@@ -2000,6 +2013,10 @@ img.alignright {
   clear: both;
 }
 #main-header {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2075,4 +2092,284 @@ img.alignright {
   border-top-left-radius: 3px;
   font-size: 14px;
   color: #000316;
+}
+#menu {
+  height: 167px;
+  zoom: 1;
+  *zoom: 1;
+  margin-top: 60px;
+  position: relative;
+}
+#menu:before,
+#menu:after {
+  content: "";
+  display: table;
+}
+#menu:after {
+  clear: both;
+}
+#menu #logo {
+  width: 195px;
+  height: 162px;
+  background: url(../img/logo.jpg) no-repeat;
+  display: block;
+  zoom: 1;
+  *zoom: 1;
+}
+#menu #logo:before,
+#menu #logo:after {
+  content: "";
+  display: table;
+}
+#menu #logo:after {
+  clear: both;
+}
+#menu ul {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#menu li {
+  padding: 25px 0;
+  padding-bottom: 10px;
+}
+#menu li a {
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  zoom: 1;
+  *zoom: 1;
+  width: 120px;
+  height: 120px;
+  float: left;
+  text-decoration: none;
+  color: #444;
+  font-size: 9px;
+  text-align: center;
+  padding-top: 100px;
+  border-left: 1px solid #ccc;
+  background-repeat: no-repeat;
+  background-position: 0 0 ;
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+#menu li a:before,
+#menu li a:after {
+  content: "";
+  display: table;
+}
+#menu li a:after {
+  clear: both;
+}
+#menu li a:hover {
+  opacity: 0.8;
+}
+#menu li#i-hotel a {
+  background-image: url(../img/hotel.png);
+}
+#menu li#i-suites a {
+  background-image: url(../img/suite.png);
+}
+#menu li#i-restaurante a {
+  background-image: url(../img/restaurante.png);
+}
+#menu li#i-passeios a {
+  background-image: url(../img/passeios.png);
+}
+#menu li#i-fotos a {
+  background-image: url(../img/fotos.png);
+}
+#menu li#i-contato a {
+  background-image: url(../img/contato.png);
+}
+#menu li:first-child a {
+  border: none;
+}
+#menu li:hover {
+  background: url(../img/li-hover.png) no-repeat center bottom;
+}
+#banner {
+  height: 387px;
+  width: 100%;
+  background-color: #F3F1ED;
+  zoom: 1;
+  *zoom: 1;
+}
+#banner:before,
+#banner:after {
+  content: "";
+  display: table;
+}
+#banner:after {
+  clear: both;
+}
+#content {
+  height: 395px;
+  width: 100%;
+  zoom: 1;
+  *zoom: 1;
+  background-color: #E7E4DC;
+}
+#content:before,
+#content:after {
+  content: "";
+  display: table;
+}
+#content:after {
+  clear: both;
+}
+#content article {
+  zoom: 1;
+  *zoom: 1;
+  float: left;
+}
+#content article:before,
+#content article:after {
+  content: "";
+  display: table;
+}
+#content article:after {
+  clear: both;
+}
+#content article.h-cima {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+#content article.h-cima:first-child {
+  margin-left: 0;
+}
+#content article.h-baixo {
+  margin-top: 30px;
+  margin-left: 25px;
+}
+#content article.h-baixo:first-child {
+  margin-left: 0;
+}
+#content a {
+  text-decoration: none;
+}
+#content h1 {
+  font-family: 'agencyfbregular';
+  font-size: 32px;
+  color: #6E593A;
+}
+#footer {
+  height: 320px;
+  width: 100%;
+  zoom: 1;
+  *zoom: 1;
+  background-color: #EBEBE3;
+}
+#footer:before,
+#footer:after {
+  content: "";
+  display: table;
+}
+#footer:after {
+  clear: both;
+}
+#news {
+  position: relative;
+  width: 335px;
+  height: 94px;
+  padding-left: 80px;
+  margin: 60px 30px 70px 25px;
+}
+#news h2 {
+  font-weight: normal;
+  font-size: 26px;
+  color: #353533;
+  margin-bottom: 5px;
+}
+#news input[type=text] {
+  width: 185px;
+  height: 27px;
+  border: none;
+  -webkit-box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 10px;
+  display: block;
+  margin-bottom: 5px;
+}
+#news #btn-cadastrar {
+  width: 137px;
+  height: 28px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: none;
+  background: url(../img/btn-cadastrar.png);
+  cursor: pointer;
+}
+#news:before {
+  content: "";
+  width: 73px;
+  height: 72px;
+  background: url(../img/icon-news.png) no-repeat;
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+#redes {
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 70px;
+  height: 183px;
+  border-left: 1px solid #fff;
+  position: absolute;
+  right: 350px;
+  top: 25px;
+  padding: 15px;
+}
+#redes > a {
+  width: 36px;
+  height: 36px;
+  display: block;
+  margin-bottom: 3px;
+  background: url('../img/icon-redes.png') no-repeat 0 0;
+}
+#redes > a.redes-2 {
+  background-position: 0 -42px;
+}
+#redes > a.redes-3 {
+  background-position: 0 -84px;
+}
+#redes > a.redes-4 {
+  background-position: 0 -124px;
+}
+#propa {
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+#footer-contato {
+  width: 100%;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+}
+#footer-contato p {
+  font-size: 11px;
+  color: #474842;
+  margin-bottom: 2px;
+}
+p.footer-email {
+  font-size: 12px;
+  color: #474842;
+  float: right;
+  margin-top: 5px;
 }

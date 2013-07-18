@@ -1,0 +1,82 @@
+#menu{
+	height: 167px;
+	.clearfix;
+	margin-top: 60px;
+	position: relative;
+
+	#logo{
+		.size(195px, 162px);
+		background: url(../img/logo.jpg) no-repeat;
+		display: block;
+		.clearfix; 
+	}
+
+	ul{
+		position: absolute;
+		top: 0;
+		right: 0;
+
+	}
+
+	li{
+		padding: 25px 0;
+		padding-bottom: 10px;
+		a{
+			.box-sizing;
+			.clearfix;
+			.size(120px, 120px);
+			float: left;
+			text-decoration: none;
+			color: #444;
+			.txt-9;
+			text-align: center;
+			padding-top: 100px;
+			border-left: 1px solid #ccc;
+			background-repeat: no-repeat;
+			background-position: 0 0 ;
+			opacity: 1;
+			.trans;
+
+			&:hover{
+				opacity: 0.8;
+			}
+		}
+
+		&#i-hotel a{
+			background-image: url(../img/hotel.png);
+		}
+
+		&#i-suites a{
+			background-image: url(../img/suite.png);
+		}
+
+		&#i-restaurante a{
+			background-image: url(../img/restaurante.png);
+		}
+
+		&#i-passeios a{
+			background-image: url(../img/passeios.png);
+		}
+
+		&#i-fotos a{
+			background-image: url(../img/fotos.png);
+		}
+
+		&#i-contato a{
+			background-image: url(../img/contato.png);
+		}
+
+		&:first-child a{
+			border: none;
+		}
+
+		&:hover{
+			background: url(../img/li-hover.png) no-repeat center bottom;
+		}
+
+	}
+
+	
+
+}
+
