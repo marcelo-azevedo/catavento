@@ -4,20 +4,20 @@
 
     	<?php include_once("topo.php"); ?>
 
-            <section id="content-int">
+            <section class="content-int" id="s-home">
                 <div class="center">
                     <h1>Nosso hotel</h1>
                     <section class="coluna-esq">
                         <div class="galeria">
-                            <a href="img/fotos/hotel1.jpg" data-lightbox="roadtrip"><img src="img/destaque/hotel1.jpg" height="216" width="592" alt=""></a>
-                            <a href="img/fotos/hotel2.jpg" data-lightbox="roadtrip"><img src="img/mini/passeio_mini1.jpg" height="102" width="133" alt=""></a>
-                            <a href="img/fotos/hotel3.jpg" data-lightbox="roadtrip"><img src="img/mini/pousada_mini3.jpg" height="102" width="133" alt=""></a>
-                            <a href="img/fotos/hotel4.jpg" data-lightbox="roadtrip"><img src="img/mini/pousada_mini4.jpg" height="102" width="133" alt=""></a>
-                            <a href="img/fotos/hotel5.jpg" data-lightbox="roadtrip"><img src="img/mini/passeio_mini2.jpg" height="102" width="133" alt=""></a>
+                            <a class="fancybox" data-fancybox-group="gallery" href="img/fotos/hotel1.jpg"><img src="img/destaque/hotel1.jpg" height="216" width="592" alt=""></a>
+                            <a class="fancybox" data-fancybox-group="gallery" href="img/fotos/hotel2.jpg"><img src="img/mini/passeio_mini1.jpg" height="102" width="133" alt=""></a>
+                            <a class="fancybox" data-fancybox-group="gallery" href="img/fotos/hotel3.jpg"><img src="img/mini/pousada_mini3.jpg" height="102" width="133" alt=""></a>
+                            <a class="fancybox" data-fancybox-group="gallery" href="img/fotos/hotel4.jpg"><img src="img/mini/pousada_mini4.jpg" height="102" width="133" alt=""></a>
+                            <a class="fancybox" data-fancybox-group="gallery" href="img/fotos/hotel5.jpg"><img src="img/mini/passeio_mini2.jpg" height="102" width="133" alt=""></a>
                         </div>
                         <section class="links-externos">
-                            <a href="" class="facebook-internas"></a>
-                            <a href="" class="pre-reservas"></a>
+                            <a href="http://www.facebook.com/CataventoHotelLounge?fref=ts" target="_blank" class="facebook-internas"></a>
+                            <a href="http://res2.omnibees.com/default.aspx?q=1610" target="_blank" class="pre-reservas"></a>
                         </section>
                     </section>
 
